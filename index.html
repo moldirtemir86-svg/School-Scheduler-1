@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мектеп Іс-шаралары мен Кезекшілік Кестесі</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🏫 Мектеп Іс-шаралары мен Кезекшілік Кестесі</h1>
+
+    <!-- Форма -->
+    <form id="schedule-form">
+      <input type="text" id="title" placeholder="Іс-шара немесе кезекші аты" required>
+      <input type="date" id="date" required>
+      <select id="type">
+        <option value="Іс-шара">Іс-шара</option>
+        <option value="Кезекшілік">Кезекшілік</option>
+      </select>
+      <button type="submit">Қосу</button>
+    </form>
+
+    <!-- Тізім -->
+    <div class="list-container">
+      <h2>Жоспарлар тізімі</h2>
+      <ul id="schedule-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
